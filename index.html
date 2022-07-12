@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Grossing Movies</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="./scripts.js"></script>
+  <link rel="icon" type="image/png" href="#" />
+  <!-- <script src="https://kit.fontawesome.com/935b5672af.js" crossorigin="anonymous"></script> -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="title">Top Grossing Movies</div>
+    <div id="description">Grouped by Genre</div>
+    <div id="graph"></div>
+    <svg id="legend" width="600" height="30">
+      <g>
+        <rect class="legend-item" x="0" y="0" width="20" height="20" fill="#f1948a"></rect>
+        <text x="25" y="16" fill="black">Action</text>
+      </g>
+      <g>
+        <rect class="legend-item" x="90" y="0" width="20" height="20" fill="#85c1e9"></rect>
+        <text x="115" y="16" fill="black">Adventure</text>
+      </g>
+      <g>
+        <rect class="legend-item" x="200" y="0" width="20" height="20" fill="#f7dc6f"></rect>
+        <text x="225" y="16" fill="black">Comedy</text>
+      </g>
+      <g>
+        <rect class="legend-item" x="300" y="0" width="20" height="20" fill="#c39bd3"></rect>
+        <text x="325" y="16" fill="black">Drama</text>
+      </g>
+      <g>
+        <rect class="legend-item" x="385" y="0" width="20" height="20" fill="#82e0aa"></rect>
+        <text x="410" y="16" fill="black">Animation</text>
+      </g>
+      <g>
+        <rect class="legend-item" x="495" y="0" width="20" height="20" fill="#f0b27a"></rect>
+        <text x="520" y="16" fill="black">Biography</text>
+      </g>
+    </svg>
+    <div id="footer">
+      <div id="author">
+        by
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/nmorelli96/">
+          nmorelli96
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
